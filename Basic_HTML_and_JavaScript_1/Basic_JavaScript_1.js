@@ -1,4 +1,4 @@
-alert("FOR THE EMPEROR!!!");
+alert("FOR THE OMNISSIAH!!!");
 
 function My_First_Function() {
 		var String = "Kiss me, I'm Irish!";
