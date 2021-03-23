@@ -1,0 +1,12 @@
+p	{
+	color: yellow;
+	background-color: blue;
+	font-size: large;
+	text-align: center;
+	}
+/* This is how you write hidden comments is CSS! */
+h1	{
+	color: blue;
+	text-shadow: 2px 2px yellow;
+	text-align: center;
+}
