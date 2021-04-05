@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Ty Chew's Dev Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    </head>
+    <!--End Head-->
+    
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!--End Navbar-->
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Fast Typing - 1656.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!--End of Background Video-->
+
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Ty Chew's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>I think that in life, as in game design, you have to find the fun. There is
+                        <br>joy out there waiting to be discovered, but it might not be where you
+                        <br>expected. You can’t decide what something’s going to be before you
+                        <br>embark on it, and you shouldn’t stick with a bad idea just because you’re
+                        <br>fond of it. Take action as quickly and repeatedly as possible, take
+                        <br>advantage of what you already know, and take liberties with tradition.
+                        <br>But most importantly, take the time to appreciate the possibilities, and
+                        <br>make sure all of your decisions are interesting ones.
+                    </q>
+                    <br> -Sid Meier, Sid Meier's Memoir!: A Life in Computer Games
+                    <br>
+                    <br> My name is Ty Chew, and welcome to my portfolio website. On it, I you'll get to know a little more about my background and experience.
+                    <br>
+                    <br> Thanks so much for stopping by, and I hope you enjoy your stay!  
+                </p>
+            </strong>
+        </div>
+        <!--End of Video Text-->
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/pexels-fauxels-3184460.jpg" alt="Ochre Desk">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer with a particular interest in game design! As far as personal hobbies go, I enjoy drawing and recently, making and painting miniatures. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--End of About Section-->
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <p class="center"><a href="https://github.com/13-Bit-Squid" target="_blank">@13-Bit-Squid on Github</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/13-Bit-Squid" target="_blank"><img src="images/github_PNG15.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!--End of Github Section-->
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact Image, Left Column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/pexels-vlada-karpovich-4050387.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact Form, Right Column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/mbjqjlyk" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--End of Contact Section-->
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+        <!--End of Footer Section-->
+
+    </body>
+    <!--End of Body-->
+
+</html>
