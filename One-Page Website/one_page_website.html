@@ -3,7 +3,7 @@
 	<head>
 		<title>Ty's Death Guard Fanpage!</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="./css/one_page_website.css">
+		<link rel="stylesheet" href="css/one_page_website.css">
 	</head>
 	<body>
 		
@@ -40,12 +40,12 @@
 			<div id="gallery">
 				<div class="container">
 					<h1>Gallery</h1>
-					<div class="flex-container">
+					<div class="flex-container row">
 				
 					<!-- PHOTO CONTAINER 1 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb\Poxwalkers.png" alt="Poxwalkers">
+						<div class="photo column">
+							<img src="thumb\Poxwalkers.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Poxwalkers">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
 								<p>A horde of Poxwalkers!</p>
@@ -56,11 +56,11 @@
 								
 					<!-- PHOTO CONTAINER 2 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Plague_Champion.png" alt="Plague Champion">
+						<div class="photo column">
+							<img src="thumb/Plague_Champion.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Plague Champion">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
-								<p>A mighty Plague Champion with his trusty Nurgling!</p>
+								<p>A mighty Plague Champion!</p>
 							</div>
 						</div>
 					</div>
@@ -68,11 +68,11 @@
 								
 					<!-- PHOTO CONTAINER 3 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Mortarion.png" alt="Mortarion">
+						<div class="photo column">
+							<img src="thumb/Mortarion.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Mortarion">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
-								<p>The daemon Primarch of the Deathguard, Mortarion!</p>
+								<p>Mortarion!</p>
 							</div>
 						</div>
 					</div>
@@ -80,8 +80,8 @@
 								
 					<!-- PHOTO CONTAINER 4 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Plagueburst_Crawler.png" alt="Plague Crawler">
+						<div class="photo column">
+							<img src="thumb/Plagueburst_Crawler.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Plague Crawler">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
 								<p>The Plague Crawler!</p>
@@ -92,8 +92,8 @@
 								
 					<!-- PHOTO CONTAINER 5 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Foetid_Bloat_Drone.png" alt="Foetid Bloat Drone">
+						<div class="photo column">
+							<img src="thumb/Foetid_Bloat_Drone.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Foetid Bloat Drone">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
 								<p>A Foetid Bloat Drone!</p>
@@ -104,11 +104,11 @@
 								
 					<!-- PHOTO CONTAINER 6 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Plague_Marines.png" alt="Plague Marines">
+						<div class="photo column">
+							<img src="thumb/Plague_Marines.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Plague Marines">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
-								<p>A maniacal cohort of Plague Marines!</p>
+								<p>Plague Marines!</p>
 							</div>
 						</div>
 					</div>
@@ -116,8 +116,8 @@
 								
 					<!-- PHOTO CONTAINER 7 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Blight_Hauler.png" alt="Blight Hauler">
+						<div class="photo column">
+							<img src="thumb/Blight_Hauler.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Blight Hauler">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
 								<p>A Blight Hauler!</p>
@@ -128,11 +128,11 @@
 								
 					<!-- PHOTO CONTAINER 8 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Chosen_of_Mortarion.png" alt="Chosen of Mortarion">
+						<div class="photo column">
+							<img src="thumb/Chosen_of_Mortarion.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Chosen of Mortarion">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
-								<p>These three are the Chosen of Mortarion!</p>
+								<p>The Chosen of Mortarion!</p>
 							</div>
 						</div>
 					</div>
@@ -140,11 +140,11 @@
 								
 					<!-- PHOTO CONTAINER 9 -->
 					<div class="photo-container">
-						<div class="photo">
-							<img src="thumb/Miasmic_Malignifier.png" alt="Miasmic Malignifier">
+						<div class="photo column">
+							<img src="thumb/Miasmic_Malignifier.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Miasmic Malignifier">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge!</h3>
-								<p>Putrid clouds rise from the smoke stacks of the Miasmic Malignifiers!</p>
+								<p>The Miasmic Malignifiers!</p>
 							</div>
 						</div>
 					</div>
@@ -153,9 +153,105 @@
 					</div>
 				</div>
 			</div>
+					
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="thumb/Poxwalkers.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="thumb/Plague_Champion.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="thumb/Mortarion.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="thumb/Plagueburst_Crawler.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="thumb/Foetid_Bloat_Drone.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="thumb/Plague_Marines.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="thumb/Blight_Hauler.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="thumb/Chosen_of_Mortarion.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="thumb/Miasmic_Malignifier.png" style="width:100%">
+			</div>
+		
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="thumb/Poxwalkers.png" onclick="currentSlide(1)" alt="Poxwalkers">
+			 </div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Plague_Champion.png" onclick="currentSlide(2)" alt="Plague Champion">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Mortarion.png" onclick="currentSlide(3)" alt="Mortarion">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Plagueburst_Crawler.png" onclick="currentSlide(4)" alt="Plagueburst Crawler">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Foetid_Bloat_Drone.png" onclick="currentSlide(5)" alt="Foetid Bloat Drone">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Plague_Marines.png" onclick="currentSlide(6)" alt="Plague Marines">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Blight_Hauler.png" onclick="currentSlide(7)" alt="Blight Hauler">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Chosen_of_Mortarion.png" onclick="currentSlide(8)" alt="Chosen of Mortarion">
+			</div>
+		  
+			<div class="column">
+				<img class="demo" src="thumb/Miasmic_Malignifier.png" onclick="currentSlide(9)" alt="Miasmic Malignifier">
+			</div>
 		</section>
 		<!-- END GALLERY -->
-		
+
 		<!-- CONTACT -->
 		<section>
 			<div id="contact">
@@ -195,6 +291,6 @@
 			Email: pendragreen@gmail.com
 		</div>
 		<!-- END FOOTER -->
-		
+		<script src="js/one_page_website.js" defer></script>
 	</body>
 </html>
